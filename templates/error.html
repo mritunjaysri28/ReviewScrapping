@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block reviewHead %}
+<title>Review Page</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% endblock %}
+
+{% block review%}
+
+<h1 style="text-align: center; color:red">{{error}}</h1>
+
+
+{% endblock %}
